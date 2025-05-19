@@ -1,0 +1,67 @@
+<html>
+  <head>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <meta charset = "utf-8">
+        <meta name = "viewport" content ="width=device-width">
+        <link href="style.css" rel="stylesheet" type = "text/css" />
+        <title>Tutoring</title>
+    </head> 
+    <body onload="fetchUsers()">
+      <div id = holdHeader>
+        <h1> Tutor Screen </h1>
+        <div id = "headerTutor">Available tutors are shown below! Filter through the subjects with the buttons below! </div>
+      </div>
+      <div id = "buttonContain">
+        <button type = "submit" class = "menu" onclick = "fetchUsers()"> Display Tutors </button>
+        <button type="button" class = "menu">Select the Subjects you need help in!</button>
+        <div id="dropdownMenu">
+          <div id="tableShow">
+          </div>
+        </div>
+      </div>
+
+    <script src="masterDoc.js"></script>
+    <script src = "loadDropMenu.js"></script>
+    <script src = "optionDisplay.js"></script>
+
+      <div id ="container"></div>     
+        <table id="user-table-template" class="user-table" style="display:none;">
+          <thead>
+            <tr>
+              <th>Student Name</th>
+            </tr>
+            <tr>
+              <th>Email Address</th>
+            </tr>
+          </thead>
+          <tbody>
+      <!-- Data rows will be added here -->
+          </tbody>
+        </table>
+
+  <body id ="body">
+    <div id = "overlay">
+      <div id ="inside-overlay">
+        <div id = "studentInfo"> Enter your student's information! </div>
+          <div id = infoContainer>
+            <label for="overlayStudentFirstName">Student's First Name</label>
+            <input type = "text" id = "overlayStudentFirstName" name = "overlayStudentFirstName">
+            <label for="overlayStudentLastName">Student's Last Name</label>
+            <input type = "text" id = "overlayStudentLastName" name = "overlayStudentLastName">
+            <div>
+              <label for ="parentEmail">Enter the Email YOU would liked to tutor to contact you at</label>
+              <input type = "text" id = "parentEmail" name = "parentEmail">
+            </div>
+          </div>
+        <div id = containChoiceText>Below are the tutor's available subjects to teach</div>
+        <div id = containChoice></div>
+      
+        <div><button type = "button" class = "bottomOverlay" onclick="sendMailRequest()">Request Tutor</button></div>
+        <div><button type="button" class = "bottomOverlay" onclick="exitOverlay()">Back</button></div>
+      </div>
+    </div>
+  </body>
+          <script src = "script.js"></script>
+              
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!-- // if either the parent or student wants to cancel the tutoring, then they come here and enter both parent's email and tutor's email to find anything in database. then, they can confirm to set to available.
+// email is sent to both parent and student that they are no longer tutoring.
+ -->
+
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta charset = "utf-8">
+    <meta name = "viewport" content ="width=device-width">
+    <link href="cancelReq.css" rel="stylesheet" type = "text/css" />
+    <title>Tutoring</title>
+  </head>
+
+  <body>
+    <div id = "pageHead">Cancel your Tutoring Assignment</div> 
+    <form id = "cancelCheck">
+      <div id = "foundPop">Error: No such tutor exists</div>
+      <div id = "errorPop">You left a text field blank!</div>
+      <div id = "emailPop">Invalid Email Format</div>
+      <div id = "tuteeEmailHold">
+        <input type = "text" id = "tuteeEmail" name = "tuteeEmail" placeholder="Enter Parent/Requester Email">
+      </div>
+      <div id = "tutorEmailHold">
+        <input type = "text" id = "tutorEmail" name = "tutorEmail" placeholder="Enter Tutor Email">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="cancelReq.js"></script>
+
+  </body>
+</html>

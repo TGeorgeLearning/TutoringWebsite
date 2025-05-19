@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <meta charset = "utf-8">
+        <meta name = "viewport" content ="width=device-width">
+        <link href="tutorStyle.css" rel="stylesheet" type = "text/css" />
+        <title>Tutor Signup</title>
+    </head>
+
+    <body>
+        <div id="pageHeader">Tutoring </div>
+        
+        <div class="container">
+            <form id = "usermake">
+                <div id = studentInfo> Enter your information! </div>
+
+                <div id = "errorPop">You left a text field blank!</div>
+
+                <div>
+                  <label for="studentFirstName">First Name</label>
+                  <input type = "text" id = "studentFirstName" name = "studentFirstName">
+                </div>
+
+                <div>
+                  <label for="studentLastName">Last Name</label>
+                  <input type="text" id="studentLastName" name ="studentLastName">
+                </div>
+
+                <div>
+                  <label for="studentTutorEmail">Enter your full email address</label>
+                  <input type = "text" id = "studentTutorEmail" name = "studentTutorEmail" contenteditable="plaintext-only">
+                </div>
+
+                <div id="headerText">Select the subjects you can tutor in!</div>
+                <div id = "tutorPop">You have to tutor in something!</div>
+
+<div id="containSubjects">
+
+</div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+        <script src="masterDoc.js"></script>
+        <script src="loadSelection.js"></script>
+        <script src = "checkboxes.js"></script> 
+        <script src="formSubmit.js"></script>
+
+       
+    </body>
+</html>

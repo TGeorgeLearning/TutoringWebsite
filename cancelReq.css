@@ -1,0 +1,55 @@
+#errorPop,#emailPop,#foundPop {
+    display:none;
+    border: 3px solid red;
+    padding:3px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#pageHead {
+    width: fit-content;
+    margin: 0 auto;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 40px;
+    margin-top:50px;
+    font-size: 40px;
+    color:#e8ffff
+}
+#cancelCheck {
+    background-color: aliceblue;
+    border: solid 10px black;
+    padding:40px;
+    border-radius: 30px;
+    display:flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    top: 10%;
+}
+
+#tutorEmailHold,#tuteeEmailHold {
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    border: solid 3px #b1c5d7;
+    padding:7px;
+    width:fit-content;
+    min-width: 240px;
+    margin-bottom: 10px;
+}
+
+
+#tutorEmail , #tuteeEmail  {
+    font-size: 20px;
+    background-color: #f1f5f8;
+    width:fit-content;
+    min-width: 300px;
+    border: solid 3px #b1c5d7;
+    border-radius: 10px;
+}
+
+
+body {
+    background-image: url('pexels-souvenirpixels-414612.jpg');
+    background-size: cover;
+  }
